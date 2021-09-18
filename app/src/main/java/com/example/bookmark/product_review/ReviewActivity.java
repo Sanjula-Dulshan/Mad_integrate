@@ -1,14 +1,16 @@
-package com.example.bookmark.cart_management;
+package com.example.bookmark.product_review;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class cart extends AppCompatActivity {
+import com.example.bookmark.R;
+
+public class ReviewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart);
+        setContentView(R.layout.activity_review);
     }
 }
