@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category_management.AddProduct"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:background="@color/purple_700">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add Book"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:ignore="InvalidId" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_outline_menu_book_24"
+        android:drawablePadding="10dp"
+        android:hint="Book name"
+        android:inputType="textCapSentences|textImeMultiLine"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_outline_menu_book_24"
+        />
+
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_baseline_text_fields_24"
+        android:drawablePadding="10dp"
+        android:hint="Description"
+        android:inputType="textCapSentences|textImeMultiLine"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_text_fields_24" />
+
+    <EditText
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_baseline_attach_money_24"
+        android:drawablePadding="10dp"
+        android:hint="Price"
+        android:inputType="number"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24" />
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawableStart="@drawable/ic_baseline_apps_24"
+        android:drawablePadding="10dp"
+        android:hint="Category"
+        android:inputType="textCapSentences|textImeMultiLine"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+    //discount
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switched"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Discount"/>
+
+
+    <EditText
+        android:id="@+id/discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+        android:drawablePadding="10dp"
+        android:hint="Discount Price"
+        android:inputType="number"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24" />
+
+
+    <Button
+
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:minWidth="10dp"
+        android:text="Add Book" />
+
+
+
+
+
+
+</LinearLayout>
