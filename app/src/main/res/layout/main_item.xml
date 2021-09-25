@@ -8,12 +8,13 @@
     android:elevation="12dp"
     android:padding="-5dp"
     app:cardUseCompatPadding="true"
+    android:layout_marginTop="30dp"
     tools:context=".category_management.DisplayBooks"
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:padding="15dp"
         >
 
