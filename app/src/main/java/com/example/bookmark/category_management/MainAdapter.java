@@ -1,5 +1,6 @@
 package com.example.bookmark.category_management;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,14 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                .error(R.drawable.common_google_signin_btn_icon_dark_normal)
                .into(holder.image);
 
+       holder.image.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent  = new Intent(v.getContext(),ItemDetails.class);
+               intent.putExtra("itemKey",getRef(position).getKey());
+               v.getContext().startActivity(intent);
+           }
+       });
 
     }
 
