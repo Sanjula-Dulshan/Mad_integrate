@@ -4,12 +4,11 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:cardCornerRadius="13dp"
-    android:elevation="6dp"
-    app:flow_verticalAlign="center"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="30dp"
+    android:elevation="25dp"
+    android:padding="-5dp"
     app:cardUseCompatPadding="true"
-    android:layout_marginLeft="50dp"
-    android:layout_marginRight="50dp"
     tools:context=".category_management.EditBook"
     >
 
@@ -18,6 +17,7 @@
         android:layout_height="match_parent"
         android:padding="15dp"
         >
+
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img2"
@@ -84,12 +84,12 @@
 
         <TextView
             android:id="@+id/desc"
-            android:layout_width="284dp"
-            android:layout_height="44dp"
+            android:layout_width="326dp"
+            android:layout_height="51dp"
             android:layout_below="@+id/discountPrice"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="-4dp"
             android:scrollHorizontally="false"
             android:text="Description"
             android:textColor="@color/black"

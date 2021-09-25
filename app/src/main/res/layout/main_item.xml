@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:cardCornerRadius="13dp"
-    android:elevation="6dp"
-    app:flow_verticalAlign="center"
+    app:cardCornerRadius="12dp"
+    android:elevation="12dp"
+    android:padding="-5dp"
     app:cardUseCompatPadding="true"
-    android:layout_marginLeft="50dp"
-    android:layout_marginRight="50dp"
+    android:layout_marginTop="30dp"
     tools:context=".category_management.DisplayBooks"
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="150dp"
         android:padding="15dp"
         >
 
@@ -84,4 +83,4 @@
 
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</ScrollView>
