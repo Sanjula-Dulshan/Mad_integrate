@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="13dp"
+    android:elevation="6dp"
+    app:flow_verticalAlign="center"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    tools:context=".category_management.EditBook"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img2"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            app:strokeColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:text="Book Name"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img2"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="Price"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img2"
+            android:layout_below="@+id/nameText"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="43dp"
+            android:layout_toRightOf="@id/img2"
+            android:scrollHorizontally="false"
+            android:text="Now"
+            android:textStyle="italic"
+            android:textColor="#FF0C0C"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/discountPrice"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginRight="43dp"
+            android:layout_toRightOf="@+id/img2"
+            android:text="Price"
+            android:textColor="#FF0C0C"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="284dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/discountPrice"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="7dp"
+            android:scrollHorizontally="false"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_below="@id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Edit"
+                android:textAllCaps="false"
+                app:backgroundTint="#FFEB3B"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+               />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                app:backgroundTint="#FF0707"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
