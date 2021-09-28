@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/cardview_light_background">
+
+        <ImageView
+            android:id="@+id/imgCart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.79"
+            android:layout_width="116dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            app:tint="#F4F1F1" />
+
+
+        <TextView
+            android:id="@+id/cart_product_name"
+            app:autoSizeTextType="none"
+            android:layout_width="106dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:text="Baby kit"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/cart_product_quantity"
+            app:autoSizeTextType="uniform"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="40dp"
+            android:text="Dcode: DB001"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHighlight="#009688"
+            android:textSize="16sp" />
+
+        <!--        <CheckBox-->
+<!--            android:id="@+id/checkBox"-->
+<!--            app:buttonTint="@android:color/darker_gray"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="5dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="27dp"-->
+<!--            android:layout_marginStart="170dp"-->
+<!--            android:layout_marginLeft="170dp"-->
+<!--            android:layout_marginTop="105dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:paddingLeft="0dp"-->
+<!--            android:paddingTop="0dp"-->
+<!--            android:text="-  |  0  |  +"-->
+<!--            android:textColor="#aaa"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="60dp"
+            android:text="Rs. 000.00"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:autoSizeTextType="uniform" />
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/number_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_product_price"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/black"
+            android:elevation="6dp"
+            app:finalNumber="10"
+            app:initialNumber="1">
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
