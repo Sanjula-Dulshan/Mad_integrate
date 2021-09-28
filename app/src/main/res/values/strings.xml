@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">bookMark</string>
+    <string name="btnCheckout">Checkout</string>
+    <string name="txtTotal">Total</string>
 </resources>
